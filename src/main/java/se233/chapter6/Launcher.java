@@ -8,8 +8,11 @@ import se233.chapter6.controller.GameLoop;
 import se233.chapter6.model.Food;
 import se233.chapter6.model.Snake;
 import se233.chapter6.view.GameStage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Launcher extends Application {
+    private static final Logger logger = LogManager.getLogger(Launcher.class);
     public static Stage stage;
     public static void main(String[] args) { launch(args); }
     @Override
